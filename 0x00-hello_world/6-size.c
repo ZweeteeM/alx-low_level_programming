@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- *Main- entry point "prints the size of various types"
- *return : Always 0 (success)
+ *Main - Entry point "prints the size of various types"
+ *Return : Always 0 (success)
 */
 int main(void)
 {
