@@ -7,7 +7,6 @@ int main(void)
 {
 	int ch;
 
-	clrscr();
 	printf(“Print all uppercase letters followed by all lowercase letters\n”);
 	for (ch = ‘A’; ch <= ‘Z’; ch++)
 	{
