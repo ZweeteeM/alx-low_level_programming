@@ -1,52 +1,24 @@
 #include <stdio.h>
 #include "main.h"
 /**
-  * print_times_table - Prints a multiplication table up to param
-  * @n: The number to be treated
+  * main - Prints the sum of all multiples of 3 or 5 up to 1024
   *
-  * Return: Number matrix
-*/
-void print_times_table(int n)
+  * Return: Always (Success)
+  */
+int main(void)
 {
-	int x, y, z;
+	int i, z = 0;
 
-	if (n >= 0 && n <= 14)
+	while (i < 1024)
 	{
-		for (x = 0; x <= n; x++)
+		if ((i % 3 == 0) || (i % 5 == 0))
 		{
-			for (y = 0; y <= n; y++)
-			{
-				z = x * y;
-				if (z > 99)
-				{
-					_putchar(',');
-					_putchar(32);
-					_putchar((z / 100) + '0');
-					_putchar(((z / 10) % 10) + '0');
-					_putchar((z % 10) + '0');
-				}
-				else if (z > 9)
-				{
-					_putchar(',');
-					_putchar(32);
-					_putchar(32);
-					_putchar(((z / 10) % 10) + '0');
-					_putchar((z % 10) + '0');
-				}
-				else
-				{
-					if (y != 0)
-					{
-						_putchar(',');
-						_putchar(32);
-						_putchar(32);
-						_putchar(32);
-					}
-					_putchar(z + '0');
-				}
-			}
-			_putchar('\n');
+			z += i;
 		}
-	}
-}
 
+		i++;
+	}
+
+	printf("%d\n", z);
+	return (0);
+}
