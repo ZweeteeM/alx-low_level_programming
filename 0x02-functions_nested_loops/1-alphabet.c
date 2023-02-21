@@ -1,10 +1,10 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 /**
- *main -  Entry point
- *description Print alphabet
- *Return: Always 0 (success)
-*/
+  * print_alphabet - Make the alphabet
+  *
+  * Return: void
+  */
 void print_alphabet(void)
 {
 	char c;
